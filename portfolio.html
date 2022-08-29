@@ -8,36 +8,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <div class="line">
-        <header class="head conteiner">
-            <nav class="nav">
+        <header class="header conteiner">
+            <nav class="navgation">
                 <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
-                <ul class="site-nav">
-                    <li class="link"> 
-                        <a href="./index.html" class="link-nav">Студия</a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"> 
+                        <a href="./index.html" class="navigation__link">Студия</a>
                     </li>
-                    <li class="link"> 
-                        <a href="./portfolio.html" class="link-nav current">Портфолио</a>
+                    <li class="navigation__item"> 
+                        <a href="./portfolio.html" class="navigation__link current">Портфолио</a>
                     </li>
-                    <li class="link"> 
-                        <a href="Контакты" class="link-nav">Контакты</a>
+                    <li class="navigation__item"> 
+                        <a href="Контакты" class="navigation__link">Контакты</a>
                     </li>            
                 </ul>        
             </nav>
             <ul class="connection">
-                <li> 
-                    <a href="mailto:info@devstudio.com" class="link link-nav">
-                        <svg class="icon" width="16px" height="12px">
+                <li class="connection__list"> 
+                    <a href="mailto:info@devstudio.com" class="link navigation__link">
+                        <svg class="icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>info@devstudio.com 
                     </a> 
                 </li>
-                <li class="connection-link"> 
-                    <a href="tel:+380961111111" class="link link-conn">
-                        <svg class="icon" width="10px" height="16px">
+                <li class="connection__list"> 
+                    <a href="tel:+380961111111" class="link connection__item">
+                        <svg class="icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>+38 096111 11 11 
                     </a>
@@ -47,7 +47,7 @@
     </div>       
     <main>  
         <section class="conteiner section">            
-            <ul class="buttons-list">
+            <ul class="buttons__list">
                 <li> <button type="button"> Все </button> </li> 
                 <li> <button type="button"> Веб-сайти </button> </li> 
                 <li> <button type="button"> Додатки </button> </li> 
@@ -56,98 +56,98 @@
             </ul>        
             <h1 class="visually-hidden">Projects</h1>
             <ul class="project">
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img7.jpg" alt="img7" width="370" >
-                        <p class="project-item-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <p class="project__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>                    
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Технокряк</h2>
-                        <p class="project-item-text">Веб-сайт</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Технокряк</h2>
+                        <p class="project__text">Веб-сайт</p>
                     </div>
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img8.jpg" alt="img8" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>                    
-                    <div class="project-item-words">
-                        <h2 class="project-item-title"> Постер New Orlean vs Golden Star</h2>
-                        <p class="project-item-text">Дизайн</p>
+                    <div class="project__words">
+                        <h2 class="project__title"> Постер New Orlean vs Golden Star</h2>
+                        <p class="project__text">Дизайн</p>
                     </div>                    
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img9.jpg" alt="img9" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>                     
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Ресторан Seafood</h2>
-                        <p class="project-item-text">Додаток</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Ресторан Seafood</h2>
+                        <p class="project__text">Додаток</p>
                     </div>                    
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img10.jpg" alt="img10" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>                    
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Проєкт Prime</h2>
-                        <p class="project-item-text">Маркетинг</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Проєкт Prime</h2>
+                        <p class="project__text">Маркетинг</p>
                     </div>                    
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img11.jpg" alt="img11" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>                    
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Проєкт Boxes</h2>
-                        <p class="project-item-text">Додаток</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Проєкт Boxes</h2>
+                        <p class="project__text">Додаток</p>
                     </div>                    
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img12.jpg" alt="img12" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>
                     
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Inspiration has no Borders</h2>
-                        <p class="project-item-text">Дизайн</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Inspiration has no Borders</h2>
+                        <p class="project__text">Дизайн</p>
                     </div>                    
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img13.jpg" alt="img13" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>
                     
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Видання Limited Edition</h2>
-                        <p class="project-item-text">Дизайн</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Видання Limited Edition</h2>
+                        <p class="project__text">Дизайн</p>
                     </div>                    
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img14.jpg" alt="img14" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>
                     
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Проект LAB</h2>
-                        <p class="project-item-text">Маркетинг</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Проект LAB</h2>
+                        <p class="project__text">Маркетинг</p>
                     </div>                    
                 </li>
-                <li class="project-item">
-                    <div class="project-item-submenu">
+                <li class="project__item">
+                    <div class="project__submenu">
                         <img src="images/img15.jpg" alt="img15" width="370" >
-                        <p class="project-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi doloremque qui est ducimus pariatur dignissimos officiis, saepe fugiat ipsam quibusdam deleniti eaque laudantium et nostrum ex? Corporis recusandae aliquid odit.</p>
                     </div>
                     
-                    <div class="project-item-words">
-                        <h2 class="project-item-title">Growing Business</h2>
-                        <p class="project-item-text">Веб-Додаток</p>
+                    <div class="project__words">
+                        <h2 class="project__title">Growing Business</h2>
+                        <p class="project__text">Веб-Додаток</p>
                     </div>                    
                 </li>
             </ul>
@@ -165,57 +165,57 @@
                 </ul>                
             </address>
             </div>            
-            <div class="footer-invite">
-                <h3 class="invite">приєднуйтесь</h3>
-                <ul class="location-list">
-                <li class="location-list-item">
-                    <a class="location-list-item-link" href="">
-                        <svg class="icon" width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="location-list">
-                    <a class="location-list-item-link" href="">
-                        <svg class="icon" width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="location-list">
-                    <a class="location-list-item-link" href="">
-                        <svg class="icon" width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="location-list">
-                    <a class="location-list-item-link" href="">
-                        <svg class="icon" width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="invite">
+                <h3 class="invite__title">ПРИЄДНУЙТЕСЬ</h3>
+                <ul class="invite__list">
+                    <li class="invite__item">
+                        <a class="invite__link" href="">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="invite__item">
+                        <a class="invite__link" href="">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="invite__item">
+                        <a class="invite__link" href="">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="invite__item">
+                        <a class="invite__link" href="">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div> 
-            <div class="footer-email">
-                <p class="footer-email-title">
+            <div class="subscription">
+                <p class="subscription__title">
                     ПІДПИШІТЬСЯ НА РОЗСИЛКУ
                 </p>              
-                <div class="mail-btn">
+                <div class="mail">
                     <input type="email"
-                        class="footer-email-item"
+                        class="mail__item"
                         name="footer-email"
                         placeholder="E-mail"
                     />
-                    <button type="button" class="button footer-email-btn">Підписатися
+                    <button type="button" class="button mail__btn">Підписатися
                         <svg class="icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                         </svg>
                     </button>
                 </div>                
-            </div>                              
-        </div>        
-    </footer>    
+            </div>           
+        </div>
+    </footer>   
 </body>
 </html>

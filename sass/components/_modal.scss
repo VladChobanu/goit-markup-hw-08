@@ -1,3 +1,17 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear;
+}
+.backdrop.is-hidden {
+  opacity: o;
+  visibility: hidden;
+  pointer-events: none;
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -11,7 +25,7 @@
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms linear;
-  .modal-btn {
+  .modal__btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -30,13 +44,13 @@
     }
   }
 }
-.modal-btn:hover .icon,
-.modal-btn:focus .icon {
+.modal__btn:hover .icon,
+.modal__btn:focus .icon {
   fill: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-title {
+.modal__title {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -47,10 +61,7 @@
   margin-bottom: 12px;
   color: #212121;
 }
-.modal-input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
+.modal-input
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
 }
@@ -63,19 +74,8 @@
   color: #757575;
 }
 .modal-comment:focus {
-  outline-color: var(--accent-color);
+  border-color: var(--accent-color);
   fill: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input:hover,
-.modal-input:focus {
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input:hover + .input-icon {
-  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -86,8 +86,23 @@
   border-radius: 4px;
   padding-left: 42px;
   margin: 0px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover + .input-icon {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  :focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
-.modal-area {
+.modal__area {
   margin-bottom: 10px;
 }
 .input-wrap {
@@ -125,6 +140,10 @@
   color: rgba(117, 117, 117, 0.5);
   padding: 12px 16px;
   margin-top: 4px;
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 .agreement-text {
   font-size: 14px;
@@ -134,26 +153,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.agreement-text::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 3px;
-  margin-right: 8px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-checkbox:checked + .agreement-text::before {
-  background-color: var(--accent-color);
-  border: none;
-  background-image: url(../images/vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 8px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-right: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-checkbox:checked + &::before {
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .agreement-link {
   font-size: 14px;
@@ -162,4 +181,21 @@
   text-decoration-line: underline;
   color: #2196f3;
   margin-left: 6px;
+}
+.submit-btn {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 200px;
 }
