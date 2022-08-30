@@ -3,13 +3,15 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding: 60px 0px;
 }
-.feature__item {
-  padding-bottom: 0;
-  
+.feature__item { 
+  @media screen and (min-width:768px) {
+    max-width: calc((100% - 30px) / 2)
+  } 
+  @media screen and (min-width:1200px) {
+    max-width: calc((100% - 90px) / 4);
+  }
 }
-
 .feature__title {
   font-family: "Roboto";
   font-style: normal;
@@ -21,6 +23,9 @@
   color: var(--titles-color);
   margin-top: 30px;
   text-align: center;
+  @media screen and (min-width:768px) {
+    text-align: left;
+}
 }
 .feature__text {
   font-weight: 400;

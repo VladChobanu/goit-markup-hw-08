@@ -23,9 +23,12 @@
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   padding-bottom: 30px;
-  // @include tablet {
-  //   max-width: calc((100% - 30px) / 2);
-  // }
+  @media screen and (min-width:768px) {
+    max-width: calc((100% - 30px) / 2)
+  }
+  @media screen and (min-width:1200px) {
+    max-width: calc((100% - 90px) / 4);
+  }
 }
 .name {
   color: #212121;
@@ -42,12 +45,12 @@
   margin-top: 0px;
   margin-bottom: 16px;
 }
-.workers {
+.sotial {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.workers__link {
+.sotial__link {
   display: flex;
   width: 44px;
   height: 44px;

@@ -18,6 +18,11 @@
   justify-content: center;
   gap: 30px;
 }
+.workers__item{
+  @media screen and (min-width:768px) {
+    max-width: calc((100% - 60px) / 3)
+  }
+}
 .clients__link {
   display: flex;
   align-items: center;
@@ -25,6 +30,12 @@
   fill: var(--icon-primay-color);
   width: 210px;
   height: 92px;
+  @media screen and (min-width:768px) {
+    width: 226px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 170px;
+}
   border: 1px solid #afb1b8;
   border-radius: 4px;
   .icon:hover,

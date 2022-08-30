@@ -3,8 +3,11 @@
   justify-content: space-between;
 }
 .line {
+  padding: 16px 15px;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
+
 .logo-full {
   margin-left: 0px;
   margin-right: 43px;
@@ -14,16 +17,45 @@
   font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.2;
+  // margin-right: 87px;
 }
 .logo-blue {
   color: #2196f3;
 }
-.navgation {
+.navigation_head{
   display: flex;
+  
+}
+.navigation__btn{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #ffffff;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 0px;
-  .logo {
-    margin-right: 93px;
+  padding: 0px;
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+.navigation__icon{
+  fill: #000000;
+}
+.navigation__block{
+  display: none;
+  @media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+  }
+  @media screen and (min-width:1200px) {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
   }
 }
 .navigation__list {
@@ -58,9 +90,9 @@
       fill: var(--primary-text-color);
     }
   }
-  .navigation__link:last-child {
-    margin-right: 0px;
-  }
+  // .navigation__link:last-child {
+  //   margin-right: 0px;
+  // }
   .navigation__link:first-child {
     margin-left: 0;
   }
@@ -79,15 +111,17 @@
   }
 }  
 .connection {
-  display: flex;
+  display: none;  
+  flex-wrap: wrap;
   align-items: center;
+  gap: 10px;
   .link {
     display: flex;
     align-items: center;
-    color: #757575;
+    color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
   }
   .icon {
@@ -102,14 +136,10 @@
 }
 .connection__item {
   margin-right: 0px;
-  margin-left: 25px;
   padding-right: 0px;
   .icon {
     fill: var(--primary-text-color);
   }
-}
-.connection__list {
-  margin-left: 30px;
 }
 .navigation__link:hover .icon,
 .navigation__link:focus .icon {

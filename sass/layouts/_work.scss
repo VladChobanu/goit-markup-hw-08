@@ -1,9 +1,18 @@
 .our-work {
+  display: none;
   margin: 0 auto;
   padding-top: 0;
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 94px;
+  @media screen and (min-width:1200px) {
+    display: block;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 94px;
+  }
 }
 .work-title {
   color: #212121;
@@ -13,16 +22,17 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.img {
+.our-work__list {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
-.img__item {
+.our-work__item {
   width: 370px;
   height: 294px;
   position: relative;
 }
-.img__title {
+.our-work__title {
   position: absolute;
   bottom: 0;
   right: 0;
