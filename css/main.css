@@ -113,6 +113,11 @@ img {
   border-bottom: 1px solid #ececec;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .line {
+    padding: 0px;
+  }
+}
 
 .logo-full {
   margin-left: 0px;
@@ -122,7 +127,7 @@ img {
 .logo {
   color: #000000;
   font-family: Raleway, cursive;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
 }
 
@@ -130,8 +135,26 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .navigation_head {
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .navigation_head {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation_head {
+    margin-right: 92px;
+  }
 }
 
 .navigation__btn {
@@ -231,6 +254,25 @@ img {
   align-items: center;
   gap: 10px;
 }
+@media screen and (min-width: 768px) {
+  .connection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .connection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
 .connection .link {
   display: flex;
   align-items: center;
@@ -293,6 +335,17 @@ img {
     padding: 118px 204px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .hero .button {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
@@ -308,6 +361,11 @@ img {
   border: 0px;
   padding: 10px 32px;
 }
+@media screen and (min-width: 480px) {
+  .hero .button {
+    font-size: 16px;
+  }
+}
 
 .hero__title {
   color: #ffffff;
@@ -321,6 +379,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .backdrop {
@@ -608,8 +672,6 @@ img {
   display: none;
   margin: 0 auto;
   padding-top: 0;
-  padding-left: 0px;
-  padding-right: 0px;
   padding-bottom: 94px;
 }
 @media screen and (min-width: 1200px) {
@@ -617,8 +679,6 @@ img {
     display: block;
     margin: 0 auto;
     padding-top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
     padding-bottom: 94px;
   }
 }
