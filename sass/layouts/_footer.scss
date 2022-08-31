@@ -70,12 +70,12 @@
   color: #ffffff;
   margin-bottom: 20px;
 }
-.sotial__list {
+.social__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.sotial__link-dark {
+.social__link--dark {
   background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
