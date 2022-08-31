@@ -6,6 +6,11 @@
   --secondary-background: #2f303a;
   --titles-color: #212121;
   --icon-primay-color: #afb1b8;
+  --background-gradient: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
 }
 
 h1,
@@ -109,6 +114,12 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .line {
@@ -254,25 +265,23 @@ img {
   display: none;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
 }
 @media screen and (min-width: 768px) {
   .connection {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    justify-content: center;
+    gap: 10px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .connection {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 .connection .link {
@@ -331,7 +340,7 @@ img {
   box-shadow: none;
 }
 .mob-menu__btn .mob-menu__icon {
-  fill: black;
+  fill: var(--titles-color);
 }
 
 .mob-menu__list {
@@ -345,7 +354,7 @@ img {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--titles-color);
 }
 
 .mob-connect {
@@ -359,7 +368,7 @@ img {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .mob-connect__email {
@@ -367,24 +376,30 @@ img {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .mob-soc__list {
   display: flex;
-  gap: 20px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22px;
-  letter-spacing: 0.02em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
   margin-top: 64px;
 }
 
-.mob-soc__item {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.current {
+  color: var(--accent-color);
 }
-.mob-soc__item .current {
-  color: #2196f3;
+
+.mob-soc__link {
+  color: var(--accent-color);
+  height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
 }
 
 .mob-menu__bottom {
@@ -392,12 +407,16 @@ img {
   height: 186px;
 }
 
+.mob-menu__icon:hover {
+  fill: var(--accent-color);
+}
+
 .hero {
   text-align: center;
   width: 100%;
   height: 400px;
   padding: 50px 20px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: var(background-gradient);
   background-image: url(../images/background-picture.jpg);
   background-color: var(--secondary-background);
   background-position: center;

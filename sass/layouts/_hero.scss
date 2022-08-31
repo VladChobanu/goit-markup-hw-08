@@ -3,11 +3,7 @@
   width: 100%;
   height: 400px;
   padding: 50px 20px;
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
+  background-image: var(background-gradient);
   background-image: url(../images/background-picture.jpg);
   background-color: var(--secondary-background);
   background-position: center;
