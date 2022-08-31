@@ -7,7 +7,7 @@
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear;
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: o;
   visibility: hidden;
   pointer-events: none;
@@ -16,8 +16,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 44px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -25,6 +25,10 @@
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms linear;
+  @media screen and (min-width:1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
   .modal__btn {
     position: absolute;
     top: 8px;
@@ -54,12 +58,16 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 12px;
   color: #212121;
+  @media screen and (min-width:1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 .modal-input
 .modal-input:focus + .input-icon {
@@ -146,13 +154,17 @@
   }
 }
 .agreement-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   &::before {
     content: "";
     width: 16px;
@@ -169,18 +181,22 @@
     background-image: url(../images/vector.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 8px;
+    margin-right: 10px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .agreement-link {
-  font-size: 14px;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
-  margin-left: 6px;
+  margin-left: 5px;
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+  line-height: 1.71;
+  }
 }
 .submit-btn {
   color: var(--secondary-text-color);
