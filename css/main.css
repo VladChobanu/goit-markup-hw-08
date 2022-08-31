@@ -320,6 +320,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  z-index: 1;
 }
 
 .mob-menu__btn {
@@ -376,10 +377,19 @@ img {
   font-size: 18px;
   line-height: 1.22px;
   letter-spacing: 0.02em;
+  margin-top: 64px;
+}
+
+.mob-soc__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-soc__item .current {
+  color: #2196f3;
 }
 
 .mob-menu__bottom {
   margin-top: 302px;
+  height: 186px;
 }
 
 .hero {
