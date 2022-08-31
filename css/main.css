@@ -7,7 +7,6 @@
   --titles-color: #212121;
   --icon-primay-color: #afb1b8;
   --background-gradient: linear-gradient(
-    to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   );
@@ -416,8 +415,7 @@ img {
   width: 100%;
   height: 400px;
   padding: 50px 20px;
-  background-image: var(background-gradient);
-  background-image: url(../images/background-picture.jpg);
+  background-image: var(--background-gradient), url(../images/background-picture.jpg);
   background-color: var(--secondary-background);
   background-position: center;
   margin-right: auto;
@@ -428,12 +426,14 @@ img {
   .hero {
     width: 480px;
     padding: 118px 60px;
+    background-image: var(--background-gradient), url(../../images/mob/studio/header-mob.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
     padding: 118px 204px;
+    background-image: var(--background-gradient), url(../../images/tablet/studio/header-tablet.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -445,6 +445,7 @@ img {
     background-position: center;
     margin-right: auto;
     margin-left: auto;
+    background-image: var(--background-gradient), url(../../images/desktop/studio/header-desktop.jpg);
   }
 }
 .hero .button {
